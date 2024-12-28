@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veda Kam - Projects">
+    <title>Veda Kam - Projects</title>
+    <link rel="stylesheet" href="styles/site.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Projects</h1>
+
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+          <div id="hamburger-menu" class="hidden">
+            <button id="hamburger-button">☰</button>
+            <ul id="hamburger-dropdown" class="hidden">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+    </header>
+
+    <section id="cornell-debut">
+        <h2>Cornell DEBUT</h2>
+        <button id="learn-more-debut">Learn More about DEBUT</button>
+        <picture class="image-section">
+            <img src="images/CAD.png" alt="CAD - Patent Pending" class="projects-pictures">
+            <figure class="caption-section">
+                <figcaption>CAD Model and Part Pictures of SteadyStride</figcaption>
+                <figcaption>Created by Cornell DEBUT, © 2024. All rights reserved.</figcaption>
+            </figure>
+        </picture>
+    </section>
+
+    <div id="modal-debut" class="hidden">
+        <div id="modal-debut-content">
+            <button id="modal-debut-close">&times;</button>
+            <h2>Cornell DEBUT</h2>
+
+            <p>As a part of Cornell DEBUT, I have been a part of designing a cane with a built-in tuned-mass damper intended to effectively dampen hand tremors. The prototype comprises of two main characteristics: a spring-based, two-degree freedom damper, in addition to a specially 3D-printed base for increased surface contact during gait. </p>
+
+            <p> The assembly of our design began with a CAD to model the cane with the TPU base and the Tuned Mass Dampening system. The cane’s base consists of a 3-D printed upside-down bosu ball shape made of TPU filament. The bosu ball concept prioritized stability with flexibility: we took the CAD a step further to create treads at the bottom of the bosu ball, preventing slippages at different angles. We coated the bosu ball with plasti-dip to generate more traction with the points of contact. The nuts and bolts with the specific dimension of the 3-D printed base were inserted as shown on the CAD along with the support bolts to attach the base to the cane. </p>
+
+            <p> We approached the testing portion of the cane in two different ways to maximize our data. Initially, we created a testing rig that aimed to simulate a Parkinsonian tremor. Through an upside-down mechanism via wooden dowels, string, and bolts, we secured the main TMD component hanging from a PVC pipe representing a dummy hand. We attempted to replicate the tremor through utilizing Cornell Seismic Design Project Team’s shake table, aligning with our original concept of tuned mass dampening during earthquakes. However, we found that our human-made rig could not account for all the aspects of a Parkinsonian tremor, from the movement of the arm to the uncontrolled duration. Due to the confounding factors, we wanted to test the product in a low-risk environment with Parkinsons patients. Our team sought out IRB approval and, after a lengthy process, we were approved to test the cane on Parkinsons patients in Dr. Bauer’s lab at SUNY Cortland. </p>
+
+            <p> Prior to the day of testing, we prepped all necessary consent forms, QUEST questionnares, and data protection measures. The testing protocol, as approved by Cornell’s IRB committee, involved a series of tasks that our team walked the patients through. In the morning, our team split up into two groups, one with each patient and either the standard or the experimental cane. While the first group ran the patient through the 7 trials with the standard cane, the other group did the same with the other patient and the experimental cane. With thorough review from prior Parkinsons mobility research, our trials consisted of a baseline tremor, walking in a straight line, walking with a right turn, walking with a left turn, walking up and down a short staircase, and sitting back down in a chair. The same two groups ran the same procedure with two more patients in the afternoon. As the patients conducted the trials, we collected data through the accelerometer attached on their hand. We gathered their insights and feedback on the standard vs. experimental cane and learned from their experiences living with a Parkinsonian tremor. All data is protected via IRB-approved security measures on Box. </p>
+
+            <p> Our team acquired over 80,000 data points, consisting of the x, y, and z accelerometer values from the experimental and control cane for each patient. In post-processing, the data was filtered and fitted with a spline with a MATLAB script that additionally averaged the max peak value of the spline. To compare the experimental to the control group, the deviation from the base tremor recorded at the start of each experiment is computed to create a percentage change. Each average peak value in addition to the percentage deviation from the base tremor is charted in our results. </p>
+
+        </div>
+    </div>
+
+    <section id="urban-sensing">
+        <h2>Mobile Urban Sensing System</h2>
+        <button id="learn-more-urban">Learn More about MUSS</button>
+        <picture class="image-section">
+            <img src="images/MUSS.JPG" alt="MUSS 2.0" class="projects-pictures">
+            <figure class="caption-section">
+                <figcaption>MUSS Prototype</figcaption>
+                <figcaption>Created by Veda Kam, © 2024. All rights reserved.</figcaption>
+            </figure>
+        </picture>
+    </section>
+
+    <div id="modal-urban" class="hidden">
+        <div id="modal-urban-content">
+            <button id="modal-urban-close">&times;</button>
+            <h2>Mobile Urban Sensing Project</h2>
+
+            <p> The goal of the project would be to create a mobile urban sensing platform that provides the users with instant air quality measurements of CO, NO2, NH3, etc. percentages, tracks relations of air quality with diseases like asthma, respiratory disease in neighborhood, provide air quality indicators in the form of red, green, and orange to alert the users, and provide users with recommendations to deal with the current poor air quality. </p>
+
+            <p> The system was capable of detecting and analyzing air pollutants, as well as producing AQI levels accordingly. It successfully offered proper recommendations based on the AQI levels in pursuit of preventing the dangers of air pollution. Further testing in polluted areas, such as Butte County, will effectuate improvements in the system. I envision my Mobile Urban Sensing System on the wrists of civilians, integrated with location hotspots of the mobile devices hinged onto vehicles or bikes, and collaborated with transportation options, such as Uber or Lyft, in urban cities. </p>
+
+        </div>
+    </div>
+
+    <section id="research">
+        <h2>Research</h2>
+        <button id="learn-more-research">Learn More about my Research</button>
+        <picture class="image-section">
+            <img src="images/PCA-Plot.png" alt="PCA Plot" class="projects-pictures">
+            <figure class="caption-section">
+                <figcaption>Principal Component Analysis Plot on Xenopus Genetic Samples</figcaption>
+                <figcaption>Generated by Veda Kam, © 2024. All rights reserved.</figcaption>
+            </figure>
+        </picture>
+
+        <div id="modal-research" class="hidden">
+            <div id="modal-research-content">
+                <button id="modal-research-close">&times;</button>
+                <h2>Past Research @ Cornell Tech </h2>
+
+                <p> My faculty mentor’s name is Mert Sabuncu, a visiting professor at Cornell University and a current professor at Cornell Tech in the School of Electrical and Computer Engineering and Department of Radiology at Weill Cornell Medical. We conducted the interview on December 1st. Professor Sabuncu’s research addresses the intersections between computation and healthcare. It’s the only lab I encountered that focused solely on biomedical imaging and neurology, topics that are core to my main interest, computer vision. Through my past research projects in high school, I’ve developed a strong interest in AI for healthcare, medical imaging, and diagnostics. The SabLab researches all these major fields and develops novel algorithms for the purpose of early diagnosis of major diseases, with a current focus on alzheimers. The sole problem that I want to tackle has always been early diagnosis of diseases, whether its early onset alzheimers or chronic kidney disease. My past science projects have been around developing algorithms for the early diagnosis of kidney disease, melanomas, etc. Now, I received the chance to be a part of revolutionary research in the field, collaborating with researchers at Weill Cornell Medicine. After discussion with Professor Sabuncu on my role, we decided that I could spend my freshman and sophomore year assisting the fundamental research while simultaneously building up all the skills necessary to develop my own machine learning project. During my junior and senior year, I can lead my own project with the research and skills I have obtained. I found his research through an extensive google search. I’m certain that I will continue working with him throughout my 4 years and craft an AI-driven project in the medical field. </p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2024 Veda Kam. All Rights Reserved.</p>
+        <p>Privacy Policy | Terms of Use</p>
+    </footer>
+
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/interactivity.js"></script>
+</body>
+
+</html>
