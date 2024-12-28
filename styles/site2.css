@@ -184,6 +184,13 @@ footer a:hover {
     display: none;
   }
 
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
 /* MODALS FOR PROJECTS */
 
 #modal-debut {
