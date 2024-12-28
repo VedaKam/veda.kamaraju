@@ -1,34 +1,5 @@
 $(document).ready(function () {
 
-    /* HAMBURGER MENU */
-    
-      if (window.matchMedia("(max-width: 768px)").matches) {
-        $("#hamburger-menu").removeClass("hidden");
-        $("#nav-bar").addClass("hidden");
-      } else {
-        $("#hamburger-menu").addClass("hidden");
-        $("#nav-bar").removeClass("hidden");
-      }
-    
-      $(window).on("resize", function () {
-        if (window.matchMedia("(max-width: 768px)").matches) {
-          $("#hamburger-menu").removeClass("hidden");
-          $("#nav-bar").addClass("hidden");
-        } else {
-          $("#hamburger-menu").addClass("hidden");
-          $("#nav-bar").removeClass("hidden");
-          $("#hamburger-dropdown").addClass("hidden");
-        }
-      });
-    
-      $("#hamburger-button").on("click", function () {
-        if ($("#hamburger-dropdown").hasClass("hidden")) {
-          $("#hamburger-dropdown").removeClass("hidden");
-        } else {
-          $("#hamburger-dropdown").addClass("hidden");
-        }
-      });
-    
     /* MODALS */
     
     $("#learn-more-debut").on("click", function() {
