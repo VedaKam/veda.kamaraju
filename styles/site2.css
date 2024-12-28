@@ -64,12 +64,12 @@ p {
     font-weight: bold;
 }
 
-/* Welcome Section */
+/* Flex container adjustments */
 .welcome-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px; /* Space between the two boxes */
+    gap: 30px;
     padding: 40px;
     background-color: #f9f9f9;
     border-radius: 20px;
@@ -78,7 +78,7 @@ p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Flex box for the image */
+  /* Image container */
   .profile-photo {
     display: flex;
     justify-content: center;
@@ -89,15 +89,17 @@ p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
+  /* Image adjustments */
   .profile-photo img {
-    width: 500px;
-    height: 500px;
+    max-width: 250px; /* Set maximum width */
+    max-height: 250px; /* Set maximum height */
     border-radius: 50%;
+    object-fit: cover; /* Ensures the image is not distorted */
     border: 4px solid #eaeaea;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  /* Flex box for the welcome text */
+  /* Welcome text adjustments */
   .welcome-text {
     flex: 1;
     background-color: #ffffff;
