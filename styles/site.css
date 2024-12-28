@@ -1,0 +1,280 @@
+/* Typography */
+body {
+    font-family: 'Merriweather', serif;
+    color: black;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    color: black;
+    font-size: 32px;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #2e4d6d;
+    font-size: 22px;
+    line-height: 8px;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    color: darkred;
+    font-size: 18px;
+    line-height:10px;
+}
+
+/* Header and Footer */
+header {
+    background-color: whitesmoke;
+    border-bottom: thick double grey;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+footer {
+    background-color: #2e4d6d;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Sections */
+section {
+    border: 2px solid black;
+    border-left: 7px solid darkred;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.profile-img {
+    width: 500px;
+    border: 4px solid #2e4d6d;
+}
+
+.projects-pictures {
+  width: 400px;
+  border: 4px solid #2e4d6d;
+}
+
+.caption-section {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+
+}
+
+/* Navigation Menu */
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #2e4d6d;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #2e4d6d;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  #nav-bar.hidden {
+    display: none;
+  }
+
+/*HAMBURGER MENU */
+
+  #hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+  }
+
+  #hamburger-menu button {
+    font-size: 30px;
+    color: black;
+  }
+
+  #hamburger-menu.hidden {
+    display: none;
+  }
+
+  #hamburger-dropdown {
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+  }
+
+  #hamburger-dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    #nav-bar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    #hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+/* MODALS FOR PROJECTS */
+
+#modal-debut {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    z-index: 1000;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-urban {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  z-index: 1000;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-research {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  z-index: 1000;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-debut.hidden {
+    display: none;
+}
+
+#modal-urban.hidden {
+  display: none;
+}
+
+#modal-research.hidden {
+  display: none;
+}
+
+#modal-debut-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    width: 1500px;
+    max-height: 90%;
+    box-shadow: 0 4px 8px whitesmoke;
+    text-align: left;
+    position: relative;
+    overflow-y: auto; /* ADDED THIS ONLY FOR THIS ONE bc I have a lot of NECESSARY text */
+}
+
+#modal-urban-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  width: 1500px;
+  max-height: 90%;
+  box-shadow: 0 4px 8px whitesmoke;
+  text-align: left;
+  position: relative;
+}
+
+#modal-research-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  width: 1500px;
+  max-height: 90%;
+  box-shadow: 0 4px 8px whitesmoke;
+  text-align: left;
+  position: relative;
+}
+
+#modal-debut-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    color: black;
+}
+
+#modal-urban-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  color: black;
+}
+
+#modal-research-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  color: black;
+}
