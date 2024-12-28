@@ -1,26 +1,26 @@
 /* Typography */
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Cambria', serif;
     color: black;
     font-size: 16px;
     line-height: 25px;
 }
 
 h1 {
-    font-family: 'Georgia', serif;
+    font-family: 'Cambria', serif;
     color: black;
     font-size: 32px;
 }
 
 h2 {
-    font-family: 'Georgia', serif;
+    font-family: 'Cambria', serif;
     color: #2e4d6d;
     font-size: 22px;
     line-height: 8px;
 }
 
 h3 {
-    font-family: 'Georgia', serif;
+    font-family: 'Cambria', serif;
     color: darkred;
     font-size: 18px;
     line-height:10px;
@@ -69,7 +69,7 @@ section {
 }
 
 .caption-section {
-  font-family: 'Merriweather', serif;
+  font-family: 'Cambria', serif;
   font-size: 18px;
 
 }
