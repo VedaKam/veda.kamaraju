@@ -64,6 +64,45 @@ p {
     font-weight: bold;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.image-section,
+.text-section {
+    flex: 1 1 40%; /* Default layout for wider screens */
+    max-width: 500px; /* Limit the maximum width for readability */
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items in a column for narrow screens */
+    }
+
+    .image-section,
+    .text-section {
+        flex: 1 1 100%; /* Make both sections take full width */
+        max-width: 100%; /* Remove width constraints for better stacking */
+    }
+
+    .text-section {
+        text-align: center; /* Center-align text for better mobile view */
+    }
+}
+
+
 /* Main flex container */
 .welcome-container {
     display: flex;
