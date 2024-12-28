@@ -69,46 +69,45 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
-    background-color: #fff;
-    margin: 20px auto;
-    max-width: 1000px;
-    border-radius: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.welcome-container {
+    gap: 40px;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    margin: 30px 20px;
+  }
+  
+  .welcome-container {
     display: flex;
     flex-direction: row;
-    gap: 30px; /* Increased space between image and text */
-    align-items: center; /* Ensures both image and text are vertically aligned */
-}
-
-.profile-photo img {
-    width: 200px; /* Adjust size for better proportions */
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .profile-photo img {
+    width: 200px;
     height: 200px;
     border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.welcome-text {
-    flex: 1;
-    text-align: left;
-}
-
-.welcome-text h1 {
-    font-size: 2rem;
+    border: 5px solid #eaeaea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome-text {
+    max-width: 600px;
+  }
+  
+  .welcome-text h1 {
+    font-size: 2.5rem;
     color: #2e4d6d;
     margin-bottom: 15px;
-}
-
-.welcome-text p {
-    font-size: 1rem;
+  }
+  
+  .welcome-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
     color: #555;
-    line-height: 1.5;
-    margin: 10px 0;
-}
+  }
+  
 
 @media (max-width: 768px) {
     .welcome-container {
