@@ -22,6 +22,12 @@ h2 {
     margin-bottom: 15px;
 }
 
+h3 {
+    font-size: 16px;
+    font-style: italic;
+    color: black;
+}
+
 p {
     color: #555;
     font-size: 1rem;
@@ -172,3 +178,127 @@ footer a {
 footer a:hover {
     color: #ddd;
 }
+
+/* MODALS FOR PROJECTS */
+
+#modal-debut {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    z-index: 1000;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-urban {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  z-index: 1000;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-research {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  z-index: 1000;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-debut.hidden {
+    display: none;
+}
+
+#modal-urban.hidden {
+  display: none;
+}
+
+#modal-research.hidden {
+  display: none;
+}
+
+#modal-debut-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    width: 1500px;
+    max-height: 90%;
+    box-shadow: 0 4px 8px whitesmoke;
+    text-align: left;
+    position: relative;
+    overflow-y: auto; /* ADDED THIS ONLY FOR THIS ONE bc I have a lot of NECESSARY text */
+}
+
+#modal-urban-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  width: 1500px;
+  max-height: 90%;
+  box-shadow: 0 4px 8px whitesmoke;
+  text-align: left;
+  position: relative;
+}
+
+#modal-research-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  width: 1500px;
+  max-height: 90%;
+  box-shadow: 0 4px 8px whitesmoke;
+  text-align: left;
+  position: relative;
+}
+
+#modal-debut-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    color: black;
+}
+
+#modal-urban-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  color: black;
+}
+
+#modal-research-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  color: black;
+}
+
