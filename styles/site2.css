@@ -89,6 +89,15 @@ p {
     margin: 0; /* Remove default margin for precise alignment */
 }
 
+.text-section-project {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Optional: Set a full height for better centering */
+    text-align: center; /* Align text in the center */
+}
+
 .image-section img {
     width: 100%;
     height: auto;
@@ -97,7 +106,7 @@ p {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.image-section-project {
+.image-section-project img {
     width: 60%; /* Ad ust the image width to 80% of its container */
     max-width: 300px; /* Set a maximum width for the image */
     height: auto; /* Maintain aspect ratio */
@@ -114,14 +123,14 @@ p {
     }
 
     .image-section,
-    .text-section {
+    .image-section-project,
+    .text-section,
+    .text-section-project {
         flex: 1 1 100%;
         max-width: 100%; /* Remove width constraint */
         text-align: center; /* Center align text */
-    }
-
-    .text-section {
         padding: 0 1rem; /* Add padding for readability */
+
     }
 
     .button {
