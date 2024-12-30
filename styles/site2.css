@@ -69,13 +69,14 @@ p {
     color: #007bff;
     font-weight: bold;
 }
+
 .container {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    padding: 2rem;
+    justify-content: space-around; /* Create space between text and image */
+    align-items: center; /* Align items vertically */
+    padding: 2rem 4rem; /* Increase padding for larger container */
+    max-width: 1200px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container on the page */
 }
 
 .image-section,
