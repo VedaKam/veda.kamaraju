@@ -79,6 +79,7 @@ p {
 }
 
 .image-section,
+.image-section-project,
 .text-section {
     flex: 1 1 40%;
     max-width: 500px;
