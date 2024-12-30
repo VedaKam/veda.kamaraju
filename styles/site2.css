@@ -90,12 +90,10 @@ p {
 }
 
 .text-section-project {
-    display: flex;
-    flex-direction: column; /* Stack the elements vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    height: 100vh; /* Optional: Set a full height for better centering */
-    text-align: center; /* Align text in the center */
+
+    flex: 1; /* Allow the text to take up space proportionally */
+    max-width: 40%; /* Limit the width of the text section */
+    text-align: center; /* Center align the text */
 }
 
 .image-section img {
