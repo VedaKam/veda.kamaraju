@@ -74,18 +74,14 @@ p {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     padding: 2rem;
 }
 
 .image-section,
 .text-section {
-    display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    align-items: flex-start; /* Align text and button to the left */
-    justify-content: center;
-    gap: 0.5rem; /* Adjust the spacing between text and button */
-    text-align: left; /* Ensure text aligns to the left */
+    flex: 1 1 40%;
+    max-width: 500px;
 }
 
 .text-section h1 {
@@ -100,7 +96,7 @@ p {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.image-section-project img {
+.image-section-project {
     width: 60%; /* Ad ust the image width to 80% of its container */
     max-width: 300px; /* Set a maximum width for the image */
     height: auto; /* Maintain aspect ratio */
