@@ -80,8 +80,11 @@ p {
 
 .image-section,
 .text-section {
-    flex: 1 1 40%;
-    max-width: 500px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center; /* Center align both text and button */
+    gap: 1rem; /* Add spacing between text and button */
 }
 
 .image-section img {
@@ -339,9 +342,8 @@ footer a:hover {
   color: black;
 }
 
-button#learn-more-debut {
-    display: block;
-    margin: 0 auto; /* Center the button */
+
+button {
     padding: 10px 20px;
     font-size: 1rem;
     background-color: #007bff;
@@ -349,9 +351,9 @@ button#learn-more-debut {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-button#learn-more-debut:hover {
+button:hover {
     background-color: #0056b3;
 }
