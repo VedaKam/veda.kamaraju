@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 20px;
     font-style: italic;
     color: black;
 }
@@ -199,7 +199,7 @@ footer {
 
 ptwo {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 footer a {
@@ -218,7 +218,7 @@ footer a:hover {
 
 
 .caption-section {
-    font-family: 'Cambria', serif;
+    font-family: Cambria, serif;
     font-size: 16px; /* Adjusted for better readability */
     text-align: center; /* Center align the captions */
     margin-top: 10px; /* Add space between the image and caption */
