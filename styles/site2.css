@@ -108,6 +108,10 @@ p {
     .text-section {
         padding: 0 1rem; /* Add padding for readability */
     }
+
+    button#learn-more-debut {
+        width: auto;
+    }
 }
 
 /* Interests Section */
@@ -325,3 +329,19 @@ footer a:hover {
   color: black;
 }
 
+button#learn-more-debut {
+    display: block;
+    margin: 0 auto; /* Center the button */
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#learn-more-debut:hover {
+    background-color: #0056b3;
+}
