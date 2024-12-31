@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
     color: black;
 }
@@ -191,15 +191,10 @@ p {
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     background-color: #2e4d6d;
     color: #fff;
     font-size: 0.9rem;
-}
-
-ptwo {
-    color: white;
-    font-size: 16px;
 }
 
 footer a {
