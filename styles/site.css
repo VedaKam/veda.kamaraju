@@ -28,6 +28,11 @@ h3 {
     color: black;
 }
 
+h4 {
+    color: white;
+    font-size: 16px;
+}
+
 p {
     color: #555;
     font-size: 1rem;
@@ -191,7 +196,7 @@ p {
 /* Footer */
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     background-color: #2e4d6d;
     color: #fff;
     font-size: 0.9rem;
