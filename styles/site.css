@@ -7,7 +7,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f5f3ef; /* Light beige color matching the screenshot */
+    background-color: #f5f5dc; 
 }
 
 h1, h2 {
@@ -127,7 +127,7 @@ p {
     gap: 20px; /* Adds spacing between cards */
     padding: 20px;
     align-items: center; /* Center the cards horizontally */
-    background-color: #f5f3ef;
+    background-color: #f5f5dc;
 
 }
 
