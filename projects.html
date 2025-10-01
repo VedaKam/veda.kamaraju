@@ -11,16 +11,14 @@
 
 <body>
     <header>
-        <header>
-            <div class="navbar">
-                <h1 class="navbar-title">Veda Kam</h1>
-                <nav class="navbar-links">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="projects.html" class="nav-link active">Projects</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </nav>
-            </div>
-        </header>
+        <div class="navbar">
+            <h1 class="navbar-title">Veda Kam</h1>
+            <nav class="navbar-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <div class="cards-container">
@@ -38,8 +36,42 @@
                 </figure>
             </div>
         </div>
+
+        <!-- Mobile Urban Sensing System Card -->
+        <div class="card">
+            <div class="text-section-project">
+                <h2>Mobile Urban Sensing System</h2>
+                <button id="learn-more-urban">Learn More about MUSS</button>
+            </div>
+            <div class="image-section-project">
+                <img src="images/MUSS.JPG" alt="MUSS 2.0" class="projects-pictures">
+                <figure class="caption-section">
+                    <figcaption>MUSS Prototype</figcaption>
+                    <figcaption>Created by Veda Kam, © 2024. All rights reserved.</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- Healthcare Supply Chain Automation Card -->
+        <div class="card">
+            <div class="text-section-project">
+                <h2>Healthcare Supply Chain Automation</h2>
+                <h3>An Integrated Deep Learning Platform to Optimize and Forecast Surgical Supply Demand</h3>
+                <button id="learn-more-hsca">Learn More about HSCA</button>
+            </div>
+            <div class="image-section-project">
+                <img src="images/SupplyChain.png" alt="Healthcare Supply Chain Automation" class="projects-pictures">
+                <figure class="caption-section">
+                    <figcaption>Melanoma Diagnosis Algorithm Architecture</figcaption>
+                    <figcaption>Created by Veda Kam, © 2024. All rights reserved.</figcaption>
+                </figure>
+            </div>
+        </div>
     </div>
 
+    <!-- ========================= -->
+    <!-- Modal: Cornell DEBUT -->
+    <!-- ========================= -->
     <div id="modal-debut" class="hidden">
         <div id="modal-debut-content">
             <button id="modal-debut-close">&times;</button>
@@ -51,100 +83,62 @@
 
             <p> We approached the testing portion of the cane in two different ways to maximize our data. Initially, we created a testing rig that aimed to simulate a Parkinsonian tremor. Through an upside-down mechanism via wooden dowels, string, and bolts, we secured the main TMD component hanging from a PVC pipe representing a dummy hand. We attempted to replicate the tremor through utilizing Cornell Seismic Design Project Team’s shake table, aligning with our original concept of tuned mass dampening during earthquakes. However, we found that our human-made rig could not account for all the aspects of a Parkinsonian tremor, from the movement of the arm to the uncontrolled duration. Due to the confounding factors, we wanted to test the product in a low-risk environment with Parkinsons patients. Our team sought out IRB approval and, after a lengthy process, we were approved to test the cane on Parkinsons patients in Dr. Bauer’s lab at SUNY Cortland. </p>
 
-            <p> Prior to the day of testing, we prepped all necessary consent forms, QUEST questionnares, and data protection measures. The testing protocol, as approved by Cornell’s IRB committee, involved a series of tasks that our team walked the patients through. In the morning, our team split up into two groups, one with each patient and either the standard or the experimental cane. While the first group ran the patient through the 7 trials with the standard cane, the other group did the same with the other patient and the experimental cane. With thorough review from prior Parkinsons mobility research, our trials consisted of a baseline tremor, walking in a straight line, walking with a right turn, walking with a left turn, walking up and down a short staircase, and sitting back down in a chair. The same two groups ran the same procedure with two more patients in the afternoon. As the patients conducted the trials, we collected data through the accelerometer attached on their hand. We gathered their insights and feedback on the standard vs. experimental cane and learned from their experiences living with a Parkinsonian tremor. All data is protected via IRB-approved security measures on Box. </p>
+            <p> Prior to the day of testing, we prepped all necessary consent forms, QUEST questionnaires, and data protection measures. The testing protocol, as approved by Cornell’s IRB committee, involved a series of tasks that our team walked the patients through. In the morning, our team split up into two groups, one with each patient and either the standard or the experimental cane. While the first group ran the patient through the 7 trials with the standard cane, the other group did the same with the other patient and the experimental cane. With thorough review from prior Parkinsons mobility research, our trials consisted of a baseline tremor, walking in a straight line, walking with a right turn, walking with a left turn, walking up and down a short staircase, and sitting back down in a chair. The same two groups ran the same procedure with two more patients in the afternoon. As the patients conducted the trials, we collected data through the accelerometer attached on their hand. We gathered their insights and feedback on the standard vs. experimental cane and learned from their experiences living with a Parkinsonian tremor. All data is protected via IRB-approved security measures on Box. </p>
 
             <p> Our team acquired over 80,000 data points, consisting of the x, y, and z accelerometer values from the experimental and control cane for each patient. In post-processing, the data was filtered and fitted with a spline with a MATLAB script that additionally averaged the max peak value of the spline. To compare the experimental to the control group, the deviation from the base tremor recorded at the start of each experiment is computed to create a percentage change. Each average peak value in addition to the percentage deviation from the base tremor is charted in our results. </p>
 
             <div class="image-section-project">
                 <img src="images/BMES.JPEG" alt="BMES" class="projects-pictures">
-            <figure class="caption-section">
-                <figcaption>DEBUT @ BMES - 1st Place at Medtronic Design Competition</figcaption>
-            </figure>
+                <figure class="caption-section">
+                    <figcaption>DEBUT @ BMES - 1st Place at Medtronic Design Competition</figcaption>
+                </figure>
             </div>
-
         </div>
     </div>
 
+    <!-- ========================= -->
+    <!-- Modal: Research -->
+    <!-- ========================= -->
+    <div id="modal-research" class="hidden">
+        <div id="modal-research-content">
+            <button id="modal-research-close">&times;</button>
+            <h2>Research Experiences</h2>
 
-    <div class="container">
-        <div class="text-section-project">
-          <h1>Research</h1>
-          <button id="learn-more-research">Learn More about my Research</button>
+            <h3>De Vlaminck Lab @ Cornell Meinig School of Biomedical Engineering</h3>
+            <p>Analyzing human liver carcinoma datasets for epigenetic patterns through spatial transcriptomics. Accelerating bioinformatics tool development with lab’s PhD students. </p>
+
+            <h3>Sabuncu Lab @ Cornell Tech, Weill Cornell Medicine</h3>
+            <p>Launched a project to bridge translational loopholes between AI and clinical workflows within radiology. Interviewing head neuroradiologists at Weill Cornell, Stanford, etc. Facilitated research on ordinal regression models for Alzheimer’s diagnosis and prognosis. </p>
+
+            <h3>The Wyss Institute for Biologically-Inspired Engineering at Harvard University: Summer 2024</h3>
+            <p>Curated a pipeline for the optimal use of Graph Neural Networks. Leveraged NVIDIA open-source software to create a bare-bones LLM to facilitate drug repurposing. Prepared material to NVIDIA representatives for usage of BioNeMo at the Wyss.
+                Analyzed biological and genetic pathways in anesthesia-induced Xenopus models under a Department of Defense grant and in-situ light-directed spatial sequencing data via R and Python. 
+                Modeled drug-gene neighborhoods through a probabilistic network algorithm for drug repurposing and discovery. 
+                Presented poster at the 2025 Cellular and Molecular Bioengineering Conference.</p>
         </div>
-        <div class="image-section-project">
-            <img src="images/CMBEPoster.png" alt="2025 CMBE Poster" class="projects-pictures">
-        <figure class="caption-section">
-            <figcaption>2025 Cellular and Molecular Bioengineering Conference Poster</figcaption>
-            <figcaption>Generated by Veda Kam, © 2024. All rights reserved.</figcaption>
-        </figure>
-        </div>
-      </div>
+    </div>
 
-        <div id="modal-research" class="hidden">
-            <div id="modal-research-content">
-                <button id="modal-research-close">&times;</button>
-                <h2>Research Experiences </h2>
-
-                <h3>De Vlaminck Lab @ Cornell Meinig School of Biomedical Engineering</h3>
-                <p>Analyzing human liver carcinoma datasets for epigenetic patterns through spatial transcriptomics. Accelerating bioinformatics tool development with lab’s PhD students. </p>
-                <h3>Sabuncu Lab @ Cornell Tech, Weill Cornell Medicine</h3>
-                <p>Launched a project to bridge translational loopholes between AI and clinical workflows within radiology. Interviewing head neuroradiologists at Weill Cornell, Stanford, etc. Facilitated research on ordinal regression models for Alzheimer’s diagnosis and prognosis. </p>
-                <h3>The Wyss Institute for Biologically-Inspired Engineering at Harvard University: Summer 2024</h3>
-                <p>Curated a pipeline for the optimal use of Graph Neural Networks. Leveraged NVIDIA open-source software to create a bare-bones LLM to facilitate drug repurposing. Prepared material to NVIDIA representatives for usage of BioNeMo at the Wyss.
-                    Analyzed biological and genetic pathways in anesthesia-induced Xenopus models under a Department of Defense grant and in-situ light-directed spatial sequencing data via R and Python. 
-                    Modeled drug-gene neighborhoods through a probabilistic network algorithm for drug repurposing and discovery. 
-                    Presented poster at the 2025 Cellular and Molecular Bioengineering Conference.</p>
-
-            </div>
-        </div>
-
-    <div class="container">
-        <div class="text-section-project">
-          <h1>Mobile Urban Sensing System</h1>
-          <button id="learn-more-urban">Learn More about MUSS</button>
-        </div>
-        <div class="image-section-project">
-            <img src="images/MUSS.JPG" alt="MUSS 2.0" class="projects-pictures">
-            <figure class="caption-section">
-                <figcaption>MUSS Prototype</figcaption>
-                <figcaption>Created by Veda Kam, © 2024. All rights reserved.</figcaption>
-            </figure>
-        </div>
-      </div>
-      
-      
-
+    <!-- ========================= -->
+    <!-- Modal: Mobile Urban Sensing -->
+    <!-- ========================= -->
     <div id="modal-urban" class="hidden">
         <div id="modal-urban-content">
             <button id="modal-urban-close">&times;</button>
             <h2>Mobile Urban Sensing Project</h2>
 
-            <p> The goal of the project would be to create a mobile urban sensing platform that provides the users with instant air quality measurements of CO, NO2, NH3, etc. percentages, tracks relations of air quality with diseases like asthma, respiratory disease in neighborhood, provide air quality indicators in the form of red, green, and orange to alert the users, and provide users with recommendations to deal with the current poor air quality. </p>
+            <p>The goal of the project would be to create a mobile urban sensing platform that provides the users with instant air quality measurements of CO, NO2, NH3, etc. percentages, tracks relations of air quality with diseases like asthma, respiratory disease in neighborhood, provide air quality indicators in the form of red, green, and orange to alert the users, and provide users with recommendations to deal with the current poor air quality. </p>
 
-            <p> The system was capable of detecting and analyzing air pollutants, as well as producing AQI levels accordingly. It successfully offered proper recommendations based on the AQI levels in pursuit of preventing the dangers of air pollution. Further testing in polluted areas, such as Butte County, will effectuate improvements in the system. I envision my Mobile Urban Sensing System on the wrists of civilians, integrated with location hotspots of the mobile devices hinged onto vehicles or bikes, and collaborated with transportation options, such as Uber or Lyft, in urban cities. </p>
-
+            <p>The system was capable of detecting and analyzing air pollutants, as well as producing AQI levels accordingly. It successfully offered proper recommendations based on the AQI levels in pursuit of preventing the dangers of air pollution. Further testing in polluted areas, such as Butte County, will effectuate improvements in the system. I envision my Mobile Urban Sensing System on the wrists of civilians, integrated with location hotspots of the mobile devices hinged onto vehicles or bikes, and collaborated with transportation options, such as Uber or Lyft, in urban cities. </p>
         </div>
     </div>
 
-    <div class="container">
-        <div class="text-section-project">
-          <h1>Healthcare Supply Chain Automation</h1>
-          <h3>An Integrated Deep Learning Platform to Optimize and Forecast Surgical Supply Demand</h3>
-          <button id="learn-more-urban">Learn More about HSCA</button>
-        </div>
-        <div class="image-section-project">
-            <img src="images/SupplyChain.png" alt="Healthcare Supply Chain Automation" class="projects-pictures">
-            <figure class="caption-section">
-                <figcaption>Melanoma Diagnosis Algorithm Architecture</figcaption>
-                <figcaption>Created by Veda Kam, © 2024. All rights reserved.</figcaption>
-            </figure>
-        </div>
-      </div>
-
-        <footer>
-            <ptwo>© 2024 Veda Kam. All Rights Reserved.</ptwo>
-            <ptwo>Privacy Policy | Terms of Use</ptwo>
-        </footer>
+    <!-- ========================= -->
+    <!-- Footer -->
+    <!-- ========================= -->
+    <footer>
+        <p>© 2024 Veda Kam. All Rights Reserved.</p>
+        <p>Privacy Policy | Terms of Use</p>
+    </footer>
 
     <script src="scripts/jquery.js"></script>
     <script src="scripts/interactivity.js"></script>
