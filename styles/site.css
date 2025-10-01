@@ -119,7 +119,6 @@ p {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .cards-container {
     display: flex;
     flex-direction: column; /* Stack cards vertically */
@@ -129,7 +128,7 @@ p {
 }
 
 .card {
-    display: flex; /* Arrange content side by side */
+    display: flex; /* Arrange text and image side by side */
     flex-direction: row; /* Horizontal layout */
     justify-content: space-between; /* Space between text and image */
     align-items: center; /* Align items vertically */
@@ -142,26 +141,19 @@ p {
     gap: 20px; /* Space between text and image */
 }
 
-.card-content {
+.text-section-project {
     flex: 1; /* Allow the text section to take up space proportionally */
     text-align: left; /* Align text to the left */
 }
 
-.card-content h2 {
+.text-section-project h2 {
     font-family: 'Georgia', serif; /* Elegant font for titles */
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
 }
 
-.card-content p {
-    font-family: 'Cambria', serif; /* Matches the screenshot typography */
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.card-content button {
+.text-section-project button {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -172,16 +164,16 @@ p {
     transition: background-color 0.2s ease;
 }
 
-.card-content button:hover {
+.text-section-project button:hover {
     background-color: #0056b3;
 }
 
-.card-image-container {
+.image-section-project {
     flex: 1; /* Allow the image section to take up space proportionally */
     text-align: center; /* Center align the image and caption */
 }
 
-.card-image-container img.card-image {
+.image-section-project img.projects-pictures {
     width: 100%; /* Full width of the container */
     max-width: 300px; /* Set a maximum width for the image */
     height: auto; /* Maintain aspect ratio */
@@ -189,12 +181,27 @@ p {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
 }
 
-.card-image-container .image-caption {
+.caption-section {
     font-family: 'Cambria', serif;
     font-size: 0.9rem;
     color: #555;
     margin-top: 10px; /* Space between image and caption */
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center; /* Center align text and image */
+    }
+
+    .text-section-project {
+        text-align: center; /* Center align text */
+    }
+
+    .image-section-project img.projects-pictures {
+        max-width: 100%; /* Allow image to take full width */
+    }
 }
 
 @media (max-width: 768px) {
