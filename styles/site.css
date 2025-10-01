@@ -148,8 +148,9 @@ p {
 }
 
 .card img.card-image {
-    width: 100%; /* Ensures the image fits within the card */
-    height: auto; /* Maintains aspect ratio */
+    width: 80%; /* Adjust the width to fit within the card */
+    height: 150px; /* Set a fixed height for consistent card sizes */
+    object-fit: cover; /* Ensures the image is cropped to fit the dimensions */
     border-radius: 8px;
     margin-bottom: 15px;
 }
